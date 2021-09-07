@@ -1,4 +1,6 @@
 *
+!*/
 !.gitignore
 !.ideavimrc
 !.tridactylrc
+!/.config/karabiner/assets/complex_modifications/q.json
