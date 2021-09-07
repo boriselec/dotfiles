@@ -1,0 +1,5 @@
+bind j scrollline 2
+bind k scrollline -2
+bind <M-k> tabnext_gt
+bind <M-j> tabprev
+bind <M-o> tabonly
