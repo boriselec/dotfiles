@@ -1,0 +1,7 @@
+nnoremap <M-k> gt
+nnoremap <M-j> gT
+nnoremap <C-M-o> :tabo<CR>
+
+nnoremap <C-M-a> :action Annotate<CR>
+nnoremap <M-l> :action MethodDown<CR>
+nnoremap <M-h> :action MethodUp<CR>
