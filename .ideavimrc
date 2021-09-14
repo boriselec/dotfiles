@@ -1,3 +1,5 @@
+set visualbell
+
 nnoremap <M-k> gt
 nnoremap <M-j> gT
 nnoremap <M-o> :tabo<CR>
