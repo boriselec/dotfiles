@@ -9,4 +9,4 @@ nnoremap <M-l> :action MethodDown<CR>
 nnoremap <M-h> :action MethodUp<CR>
 nnoremap <A-j> :action VcsShowNextChangeMarker<CR>
 nnoremap <A-k> :action VcsShowPrevChangeMarker<CR>
-nnoremap <A-S-r> :action Vcs.RollbackChangedLines<CR>
+nnoremap <A-r> :action Vcs.RollbackChangedLines<CR>
