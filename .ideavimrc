@@ -1,8 +1,4 @@
-set visualbell
-
-nnoremap <M-k> gt
-nnoremap <M-j> gT
-nnoremap <M-o> :tabo<CR>
+source ~/.vimrc_common
 
 nnoremap <C-M-a> :action Annotate<CR>
 nnoremap <M-l> :action MethodDown<CR>

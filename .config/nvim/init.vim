@@ -8,4 +8,4 @@ set background=light
 colorscheme intellij
 let g:lightline = {'colorscheme': 'intellij'}
 
-set number
+source ~/.vimrc_common
