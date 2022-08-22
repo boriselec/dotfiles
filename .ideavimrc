@@ -6,7 +6,14 @@ nnoremap <M-o> :tabo<CR>
 
 nnoremap <C-M-a> :action Annotate<CR>
 nnoremap <M-l> :action MethodDown<CR>
+" System Preferences > Keyboard > Shortcuts > App Shortcuts > Hide IntelliJ IDEA
 nnoremap <M-h> :action MethodUp<CR>
 nnoremap <A-j> :action VcsShowNextChangeMarker<CR>
 nnoremap <A-k> :action VcsShowPrevChangeMarker<CR>
 nnoremap <A-r> :action Vcs.RollbackChangedLines<CR>
+
+sethandler <M-j> a:vim
+sethandler <M-k> a:vim
+sethandler <M-l> a:vim
+sethandler <M-o> a:vim
+
