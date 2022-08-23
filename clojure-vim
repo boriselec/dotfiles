@@ -1,0 +1,2 @@
+#!/bin/bash
+nvim -c ":call AutoHighlightToggle()" -c "set hls" $@
