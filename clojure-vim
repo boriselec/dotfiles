@@ -1,2 +1,12 @@
 #!/bin/bash
-nvim -c ":call AutoHighlightToggle()" -c "set hls" $@
+# run terminal emulator
+# ..with zsh
+# ..starting nvim
+# ..with custom vim startup arguments
+# ..passing script args to vim
+arg=$@
+alacritty \
+-e zsh \
+-c "nvim \
+-c ':call AutoHighlightToggle()' -c 'set hls' \
+${arg}"
