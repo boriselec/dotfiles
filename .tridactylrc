@@ -4,3 +4,5 @@ source ~/.vimrc_common
 
 bind j scrollline 2
 bind k scrollline -2
+
+set newtab http://example.com
