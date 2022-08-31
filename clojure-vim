@@ -13,4 +13,6 @@ alacritty \
 -c "nvim \
 -c ':call AutoHighlightToggle()' -c 'set hls' \
 -c ':call SlimvConnectServer()' \
+-c ':wincmd H' \
+-c ':vertical resize 84' \
 ${arg}"

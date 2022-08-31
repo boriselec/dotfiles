@@ -1,0 +1,6 @@
+window:
+  dimensions:
+    columns: 150
+    lines: 65
+font:
+  size: 13

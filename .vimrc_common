@@ -1,6 +1,12 @@
 set visualbell
 set number
 
+set nowrap
+" Show < or > when characters are not displayed on the left or right.
+:set list listchars=precedes:<,extends:>
+" Same, but also show tabs and trailing spaces.
+:set list listchars=tab:>-,trail:.,precedes:<,extends:>
+
 nnoremap <C-k> gt
 nnoremap <M-k> gt
 nnoremap <C-j> gT
