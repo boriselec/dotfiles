@@ -1,4 +1,7 @@
 #!/bin/bash
+readonly SWANK_LOCATION=personal/swank-racket
+readonly RACKET_EXECUTABLE=/Users/16676965/personal/Racket\ v8.6/bin/racket
+cd ${SWANK_LOCATION} && "$RACKET_EXECUTABLE" server.rkt &
 # run terminal emulator
 # ..with zsh
 # ..starting nvim
@@ -9,4 +12,5 @@ alacritty \
 -e zsh \
 -c "nvim \
 -c ':call AutoHighlightToggle()' -c 'set hls' \
+-c ':call SlimvConnectServer()' \
 ${arg}"
