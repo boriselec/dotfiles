@@ -62,8 +62,8 @@
 			 "conditions": [
 			    {
 			      "type": "frontmost_application_if",
-			      "file_paths": [
-				"/usr/local/bin/alacritty"
+			      "bundle_identifiers": [
+				"^io\\.alacritty$"
 			      ]
 			    }
 			  ],
@@ -89,8 +89,8 @@
 			 "conditions": [
 			    {
 			      "type": "frontmost_application_if",
-			      "file_paths": [
-				"/usr/local/bin/alacritty"
+			      "bundle_identifiers": [
+				"^io\\.alacritty$"
 			      ]
 			    }
 			  ],
@@ -116,8 +116,8 @@
 			 "conditions": [
 			    {
 			      "type": "frontmost_application_if",
-			      "file_paths": [
-				"/usr/local/bin/alacritty"
+			      "bundle_identifiers": [
+				"^io\\.alacritty$"
 			      ]
 			    }
 			  ],
