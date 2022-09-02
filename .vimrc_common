@@ -1,5 +1,6 @@
 set visualbell
 set number
+set noswapfile
 
 set nowrap
 " Show < or > when characters are not displayed on the left or right.
