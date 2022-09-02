@@ -31,4 +31,9 @@ autocmd VimEnter * call SlimvConnectServerAndResize()
 " startup: remap slimv connect binding
 autocmd VimEnter * nnoremap ,c :call SlimvConnectServerAndResize()<CR>
 
+" go to next/prev method
+set nowrapscan
+nnoremap <C-l> /^[^ \t\r\n\v\f;]<CR>
+nnoremap <C-h> _?^[^ \t\r\n\v\f;]<CR>
+
 source ~/.vimrc_common
