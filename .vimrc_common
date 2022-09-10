@@ -1,12 +1,12 @@
-set visualbell
-set number
-set noswapfile
+set visualbell visualbell
+set number number
+set noswapfile noswapfile
 
-set nowrap
+set nowrap nowrap
 " Show < or > when characters are not displayed on the left or right.
-:set list listchars=precedes:<,extends:>
+set list listchars=precedes:<,extends:>
 " Same, but also show tabs and trailing spaces.
-:set list listchars=tab:>-,trail:.,precedes:<,extends:>
+set list listchars=tab:>-,trail:.,precedes:<,extends:>
 
 nnoremap <C-k> gt
 nnoremap <M-k> gt
