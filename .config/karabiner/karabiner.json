@@ -43,6 +43,41 @@
                         "description": "Map cmd to ctrl for Alacritty",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^io\\.alacritty$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "w",
+                                        "modifiers": [
+                                            "left_control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^io\\.alacritty$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
@@ -59,17 +94,17 @@
                                         ]
                                     }
                                 ],
-			 "conditions": [
-			    {
-			      "type": "frontmost_application_if",
-			      "bundle_identifiers": [
-				"^io\\.alacritty$"
-			      ]
-			    }
-			  ],
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^io\\.alacritty$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
@@ -86,17 +121,17 @@
                                         ]
                                     }
                                 ],
-			 "conditions": [
-			    {
-			      "type": "frontmost_application_if",
-			      "bundle_identifiers": [
-				"^io\\.alacritty$"
-			      ]
-			    }
-			  ],
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^io\\.alacritty$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
@@ -113,17 +148,17 @@
                                         ]
                                     }
                                 ],
-			 "conditions": [
-			    {
-			      "type": "frontmost_application_if",
-			      "bundle_identifiers": [
-				"^io\\.alacritty$"
-			      ]
-			    }
-			  ],
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^io\\.alacritty$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "o",
                                     "modifiers": {
@@ -140,17 +175,17 @@
                                         ]
                                     }
                                 ],
-			 "conditions": [
-			    {
-			      "type": "frontmost_application_if",
-			      "bundle_identifiers": [
-				"^io\\.alacritty$"
-			      ]
-			    }
-			  ],
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^io\\.alacritty$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
@@ -167,14 +202,6 @@
                                         ]
                                     }
                                 ],
-			 "conditions": [
-			    {
-			      "type": "frontmost_application_if",
-			      "bundle_identifiers": [
-				"^io\\.alacritty$"
-			      ]
-			    }
-			  ],
                                 "type": "basic"
                             }
                         ]

@@ -1,6 +1,6 @@
 window:
   dimensions:
-    columns: 150
+    columns: 180
     lines: 65
 font:
   size: 13

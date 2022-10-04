@@ -2,23 +2,25 @@ call plug#begin()
 Plug 'boriselec/intellij.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'kovisoft/slimv'
+Plug 'kyazdani42/nvim-tree.lua'
 call plug#end()
 
 set termguicolors
 set background=light
 colorscheme intellij
 let g:lightline = {'colorscheme': 'intellij'}
+set laststatus=3
 
 " Highlight all instances of word under cursor
 function! AutoHighlightToggle()
   au CursorHold * let @/ = '\V\<'.escape(expand('<cword>'), '\').'\>'
+  au CursorHold * set hlsearch
   setl updatetime=175
 endfunction
 
 let g:slimv_swank_cmd = '!osascript -e
 \ "tell application \"Terminal\" to do script
-\ \"cd personal/swank-racket &&
-\ /Users/16676965/personal/Racket\\\\ v8.6/bin/racket server.rkt\""'
+\ \"/Users/16676965/.config/nvim/slimv_server.sh && exit\""'
 
 " move repl window
 function! SlimvConnectServerAndResize()
@@ -33,7 +35,43 @@ autocmd VimEnter * nnoremap ,c :call SlimvConnectServerAndResize()<CR>
 
 " go to next/prev method
 set nowrapscan
-nnoremap <C-l> /^[^ \t\r\n\v\f;]<CR>
-nnoremap <C-h> _?^[^ \t\r\n\v\f;]<CR>
+nnoremap <C-l> :set nohlsearch<CR>/^[^ \t\r\n\v\f;]<CR>:echo<CR>
+nnoremap <C-h> :set nohlsearch<CR>_?^[^ \t\r\n\v\f;]<CR>:echo<CR>
+
+let g:python3_host_prog = '/usr/bin/python3'
+
+lua << EOF
+vim.g.loaded = 1
+vim.g.loaded_netrwPlugin = 1
+
+require("nvim-tree").setup({
+  hijack_cursor = true,
+  open_on_tab = true,
+  sort_by = "case_sensitive",
+  view = {
+    adaptive_size = true,
+    mappings = {
+      list = {
+        { key = "u", action = "dir_up" },
+      },
+    },
+  },
+  renderer = {
+    group_empty = true,
+    highlight_opened_files = 'name',
+    icons = {
+      show = {
+        file = false,
+        folder = false,
+        folder_arrow = false
+      }
+    }
+  }
+})
+EOF
+
+autocmd VimEnter * NvimTreeFindFileToggle
+autocmd VimEnter * wincmd w
+autocmd VimEnter * lua require("set_project_root")
 
 source ~/.vimrc_common
