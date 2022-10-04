@@ -4,7 +4,6 @@
 # ..starting nvim
 # ..with custom vim startup arguments
 # ..passing script args to vim
-#-c "cd ~/personal; /Users/16676965/Downloads/nvim-macos/bin/nvim \
 arg=$@
 open /Applications/Alacritty.app \
 --args \
