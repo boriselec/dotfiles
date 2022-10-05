@@ -8,10 +8,12 @@ nnoremap <A-j> :action VcsShowNextChangeMarker<CR>
 nnoremap <A-k> :action VcsShowPrevChangeMarker<CR>
 nnoremap <A-r> :action Vcs.RollbackChangedLines<CR>
 nnoremap <M-g> :action RunAnything<CR>
+nnoremap <M-q> :action CloseProject<CR>
 
 sethandler <M-j> a:vim
 sethandler <M-k> a:vim
 sethandler <M-l> a:vim
 sethandler <M-o> a:vim
 sethandler <M-g> a:vim
+sethandler <M-q> a:vim
 
