@@ -5,4 +5,7 @@ source ~/.vimrc_common
 bind j scrollline 2
 bind k scrollline -2
 
+bind <M-j> tabprev
+bind <M-k> tabnext_gt
+
 set newtab http://example.com
