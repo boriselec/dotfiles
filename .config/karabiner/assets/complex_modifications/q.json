@@ -24,6 +24,27 @@
           ]
         }
       ]
+    },
+    {
+      "description": "Command + Shift to keyboard fn",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_shift",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "apple_vendor_top_case_key_code": "keyboard_fn"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
