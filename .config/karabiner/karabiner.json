@@ -24,7 +24,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^io\\.alacritty$"
+                                            "^org\\.alacritty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -51,7 +51,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^io\\.alacritty$"
+                                            "^org\\.alacritty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -78,7 +78,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^io\\.alacritty$"
+                                            "^org\\.alacritty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -105,7 +105,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^io\\.alacritty$"
+                                            "^org\\.alacritty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -132,7 +132,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^io\\.alacritty$"
+                                            "^org\\.alacritty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -159,7 +159,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^io\\.alacritty$"
+                                            "^org\\.alacritty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
