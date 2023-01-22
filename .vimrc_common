@@ -9,8 +9,5 @@ set list listchars=precedes:<,extends:>
 set list listchars=tab:>-,trail:.,precedes:<,extends:>
 
 nnoremap <C-k> gt
-nnoremap <M-k> gt
 nnoremap <C-j> gT
-nnoremap <M-j> gT
 nnoremap <C-o> :tabo<CR>
-nnoremap <M-o> :tabo<CR>

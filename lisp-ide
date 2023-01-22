@@ -8,6 +8,6 @@ arg=$@
 open /Applications/Alacritty.app \
 --args \
 -e zsh \
--c "/Users/16676965/Downloads/nvim-macos/bin/nvim \
+-c "nvim \
 -c ':call AutoHighlightToggle()' -c 'set hls' \
 ${arg}"

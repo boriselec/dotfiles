@@ -3,6 +3,7 @@ Plug 'boriselec/intellij.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'kovisoft/slimv'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 set termguicolors
@@ -10,6 +11,11 @@ set background=light
 colorscheme intellij
 let g:lightline = {'colorscheme': 'intellij'}
 set laststatus=3
+set signcolumn=yes:1
+
+nmap <A-j> ]c
+nmap <A-k> [c
+nmap <A-r> \hu
 
 " Highlight all instances of word under cursor
 function! AutoHighlightToggle()
@@ -20,7 +26,7 @@ endfunction
 
 let g:slimv_swank_cmd = '!osascript -e
 \ "tell application \"Terminal\" to do script
-\ \"/Users/16676965/.config/nvim/slimv_server.sh && exit\""'
+\ \"/Users/boris/.config/nvim/slimv_server.sh && exit\""'
 
 " move repl window
 function! SlimvConnectServerAndResize()
@@ -38,7 +44,7 @@ set nowrapscan
 nnoremap <C-l> :set nohlsearch<CR>/^[^ \t\r\n\v\f;]<CR>:echo<CR>
 nnoremap <C-h> :set nohlsearch<CR>_?^[^ \t\r\n\v\f;]<CR>:echo<CR>
 
-let g:python3_host_prog = '/usr/bin/python3'
+let g:python3_host_prog = '/opt/homebrew/bin/python3'
 
 lua << EOF
 vim.g.loaded = 1
