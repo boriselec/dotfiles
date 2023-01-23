@@ -8,6 +8,6 @@ arg=$@
 open /Applications/Alacritty.app \
 --args \
 -e zsh \
--c "nvim \
+-c "nvim -u ~/.config/nvim/lisp-ide-init.vim \
 -c ':call AutoHighlightToggle()' -c 'set hls' \
 ${arg}"
