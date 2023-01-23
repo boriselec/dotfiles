@@ -1,17 +1,11 @@
-call plug#begin()
-Plug 'boriselec/intellij.vim'
-Plug 'itchyny/lightline.vim'
-Plug 'kovisoft/slimv'
-Plug 'kyazdani42/nvim-tree.lua'
-Plug 'airblade/vim-gitgutter'
-call plug#end()
+source ~/.config/nvim/init.vim
 
-set termguicolors
-set background=light
 colorscheme intellij
 let g:lightline = {'colorscheme': 'intellij'}
+
+syntax on
+set termguicolors
 set laststatus=3
-set signcolumn=yes:1
 
 nmap <A-j> ]c
 nmap <A-k> [c
@@ -43,8 +37,6 @@ autocmd VimEnter * nnoremap ,c :call SlimvConnectServerAndResize()<CR>
 set nowrapscan
 nnoremap <C-l> :set nohlsearch<CR>/^[^ \t\r\n\v\f;]<CR>:echo<CR>
 nnoremap <C-h> :set nohlsearch<CR>_?^[^ \t\r\n\v\f;]<CR>:echo<CR>
-
-let g:python3_host_prog = '/opt/homebrew/bin/python3'
 
 lua << EOF
 vim.g.loaded = 1
@@ -79,5 +71,3 @@ EOF
 autocmd VimEnter * NvimTreeFindFileToggle
 autocmd VimEnter * wincmd w
 autocmd VimEnter * lua require("set_project_root")
-
-source ~/.vimrc_common
