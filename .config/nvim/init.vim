@@ -6,7 +6,6 @@ Plug 'kyazdani42/nvim-tree.lua'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
 
-syntax off
 set background=light
 
 set signcolumn=yes:1
